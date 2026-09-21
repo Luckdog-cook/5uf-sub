@@ -68,7 +68,7 @@
       "grpc-opts": {}
     },
     {
-      "name": "5UF 法国 4 vless+NGINX(CDN) TEST",
+      "name": "5UF 法国 4 vless+NGINX(CDN)",
       "type": "vless",
       "server": "fr1.xinhuanet.network",
       "port": 443,
@@ -91,7 +91,7 @@
       }
     },
     {
-      "name": "5UF 法国 5 naive http TEST",
+      "name": "5UF 法国 5 naive http",
       "type": "vless",
       "server": "fr1.xinhuanet.network",
       "port": 38574,
@@ -227,7 +227,7 @@
       "skip-cert-verify": true
     },
     {
-      "name": "5UF 香港 4, vless_xhttp CDN 协议测试",
+      "name": "5UF 香港 4, vless_xhttp CDN",
       "type": "vless",
       "server": "hk4.febbox.cn",
       "port": 443,

@@ -49,7 +49,7 @@ proxies:
     ws-opts:
     grpc-opts:
     udp: true
-  - name: 5UF 法国 4 vless+NGINX(CDN) TEST
+  - name: 5UF 法国 4 vless+NGINX(CDN)
     type: vless
     server: fr1.xinhuanet.network
     port: 443
@@ -70,7 +70,7 @@ proxies:
       session-key: 'X-Speedtest-Session'
       obfuscation: true
     udp: true
-  - name: 5UF 法国 5 naive http TEST
+  - name: 5UF 法国 5 naive http
     type: vless
     server: fr1.xinhuanet.network
     port: 38574
@@ -195,7 +195,7 @@ proxies:
     skip-cert-verify: true
     alpn:
     udp: true
-  - name: '5UF 香港 4, vless_xhttp CDN 协议测试'
+  - name: '5UF 香港 4, vless_xhttp CDN'
     type: vless
     server: hk4.febbox.cn
     port: 443
@@ -822,15 +822,15 @@ proxy-groups:
     proxies:
       - '5UF 德国1,直连Frankfurt, DE'
       - 5UF 法国 3 vless 测试
-      - 5UF 法国 4 vless+NGINX(CDN) TEST
-      - 5UF 法国 5 naive http TEST
+      - 5UF 法国 4 vless+NGINX(CDN)
+      - 5UF 法国 5 naive http
       - 5UF 法国 1 anytls测试
       - 5UF 法国 2 Hysteria2 测试
       - 5UF 英国 6 VLESS
       - 5UF 英国 7 VLESS + NGINX CDN
       - 5UF 英国 8 Naive HTTP
       - 5UF 英国 4 AnyTLS + HTTP2
-      - '5UF 香港 4, vless_xhttp CDN 协议测试'
+      - '5UF 香港 4, vless_xhttp CDN'
       - '5UF 印度 1,直连印度'
       - '5UF 韩国 ,直连首尔'
       - 5UF 新加坡 sg3，Hysteria2
@@ -878,8 +878,8 @@ proxy-groups:
     type: select
     proxies:
       - 5UF 法国 3 vless 测试
-      - 5UF 法国 4 vless+NGINX(CDN) TEST
-      - 5UF 法国 5 naive http TEST
+      - 5UF 法国 4 vless+NGINX(CDN)
+      - 5UF 法国 5 naive http
       - 5UF 法国 1 anytls测试
       - 5UF 法国 2 Hysteria2 测试
   - name: 🇬🇧 GB
@@ -892,7 +892,7 @@ proxy-groups:
   - name: 🇭🇰 HK
     type: select
     proxies:
-      - '5UF 香港 4, vless_xhttp CDN 协议测试'
+      - '5UF 香港 4, vless_xhttp CDN'
   - name: 🏳️ IN
     type: select
     proxies:

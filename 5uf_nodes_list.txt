@@ -1,14 +1,14 @@
 [  1] 5UF 德国1,直连Frankfurt, DE	vless	de1.xinhuanet.network:443
 [  2] 5UF 法国 3 vless 测试	vless	fr1.xinhuanet.network:38573
-[  3] 5UF 法国 4 vless+NGINX(CDN) TEST	vless	fr1.xinhuanet.network:443
-[  4] 5UF 法国 5 naive http TEST	vless	fr1.xinhuanet.network:38574
+[  3] 5UF 法国 4 vless+NGINX(CDN)	vless	fr1.xinhuanet.network:443
+[  4] 5UF 法国 5 naive http	vless	fr1.xinhuanet.network:38574
 [  5] 5UF 法国 1 anytls测试	anytls	fr1.xinhuanet.network:38553
 [  6] 5UF 法国 2 Hysteria2 测试	hysteria2	fr1.xinhuanet.network:38590
 [  7] 5UF 英国 6 VLESS	vless	uk4.xinhuanet.network:38573
 [  8] 5UF 英国 7 VLESS + NGINX CDN	vless	uk4.xinhuanet.network:443
 [  9] 5UF 英国 8 Naive HTTP	vless	uk4.xinhuanet.network:38574
 [ 10] 5UF 英国 4 AnyTLS + HTTP2	anytls	uk4.xinhuanet.network:38553
-[ 11] 5UF 香港 4, vless_xhttp CDN 协议测试	vless	hk4.febbox.cn:443
+[ 11] 5UF 香港 4, vless_xhttp CDN	vless	hk4.febbox.cn:443
 [ 12] 5UF 印度 1,直连印度	vless	in1.xinhuanet.network:443
 [ 13] 5UF 韩国 ,直连首尔	vless	kr1.xinhuanet.network:443
 [ 14] 5UF 新加坡 sg3，Hysteria2	hysteria2	sg1.xinhuanet.network:443

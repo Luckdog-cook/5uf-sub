@@ -1,1 +1,1 @@
-vless://d7bb5b15-22ff-40a1-8d2c-fce0d010118e@hk4.febbox.cn:443?security=tls&sni=hk4.febbox.cn&fp=chrome&type=xhttp&path=%2Fspeedtest%2Fapi%2Fprobe&host=hk4.febbox.cn&mode=stream-up&allowInsecure=1#5UF%20%E9%A6%99%E6%B8%AF%204%2C%20vless_xhttp%20CDN
+vless://8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f@hk4.febbox.cn:443?security=tls&sni=hk4.febbox.cn&fp=chrome&type=xhttp&path=%2Fspeedtest%2Fapi%2Fprobe&host=hk4.febbox.cn&mode=stream-up&allowInsecure=1#5UF%20%E9%A6%99%E6%B8%AF%204%2C%20vless_xhttp%20CDN

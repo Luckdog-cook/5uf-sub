@@ -625,6 +625,153 @@ proxies:
       session-key: 'X-Speedtest-Session'
       obfuscation: true
     udp: true
+  - name: '5UF 台湾2,BGP中转'
+    type: vless
+    server: tw2.xinhuanet.network
+    port: 20444
+    uuid: '8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f'
+    tls: true
+    servername: tw2.xinhuanet.network
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    network: xhttp
+    udp: true
+    alpn:
+    xhttp-opts:
+      path: /speedtest/api/probe
+      host: tw2.xinhuanet.network
+      mode: 'stream-up'
+      x-padding-bytes: 0
+      session-placement: header
+      session-key: 'X-Speedtest-Session'
+      obfuscation: true
+    udp: true
+  - name: '5UF 越南2,BGP中转'
+    type: vless
+    server: vn2.xinhuanet.network
+    port: 20445
+    uuid: '8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f'
+    tls: true
+    servername: vn2.xinhuanet.network
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    network: xhttp
+    udp: true
+    alpn:
+    xhttp-opts:
+      path: /speedtest/api/probe
+      host: vn2.xinhuanet.network
+      mode: 'stream-up'
+      x-padding-bytes: 0
+      session-placement: header
+      session-key: 'X-Speedtest-Session'
+      obfuscation: true
+    udp: true
+  - name: '5UF 韩国2,BGP中转'
+    type: vless
+    server: kr2.xinhuanet.network
+    port: 20446
+    uuid: '8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f'
+    tls: true
+    servername: kr2.xinhuanet.network
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    network: xhttp
+    udp: true
+    alpn:
+    xhttp-opts:
+      path: /speedtest/api/probe
+      host: kr2.xinhuanet.network
+      mode: 'stream-up'
+      x-padding-bytes: 0
+      session-placement: header
+      session-key: 'X-Speedtest-Session'
+      obfuscation: true
+    udp: true
+  - name: '5UF 泰国2,BGP中转'
+    type: vless
+    server: th2.xinhuanet.network
+    port: 20447
+    uuid: '8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f'
+    tls: true
+    servername: th2.xinhuanet.network
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    network: xhttp
+    udp: true
+    alpn:
+    xhttp-opts:
+      path: /speedtest/api/probe
+      host: th2.xinhuanet.network
+      mode: 'stream-up'
+      x-padding-bytes: 0
+      session-placement: header
+      session-key: 'X-Speedtest-Session'
+      obfuscation: true
+    udp: true
+  - name: '5UF 澳大利亚2,BGP中转'
+    type: vless
+    server: au2.xinhuanet.network
+    port: 20448
+    uuid: '8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f'
+    tls: true
+    servername: au2.xinhuanet.network
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    network: xhttp
+    udp: true
+    alpn:
+    xhttp-opts:
+      path: /speedtest/api/probe
+      host: au2.xinhuanet.network
+      mode: 'stream-up'
+      x-padding-bytes: 0
+      session-placement: header
+      session-key: 'X-Speedtest-Session'
+      obfuscation: true
+    udp: true
+  - name: '5UF 印度2,BGP中转'
+    type: vless
+    server: in2.xinhuanet.network
+    port: 20449
+    uuid: '8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f'
+    tls: true
+    servername: in2.xinhuanet.network
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    network: xhttp
+    udp: true
+    alpn:
+    xhttp-opts:
+      path: /speedtest/api/probe
+      host: in2.xinhuanet.network
+      mode: 'stream-up'
+      x-padding-bytes: 0
+      session-placement: header
+      session-key: 'X-Speedtest-Session'
+      obfuscation: true
+    udp: true
+  - name: '5UF 德国2,BGP中转'
+    type: vless
+    server: de2.xinhuanet.network
+    port: 20450
+    uuid: '8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f'
+    tls: true
+    servername: de2.xinhuanet.network
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    network: xhttp
+    udp: true
+    alpn:
+    xhttp-opts:
+      path: /speedtest/api/probe
+      host: de2.xinhuanet.network
+      mode: 'stream-up'
+      x-padding-bytes: 0
+      session-placement: header
+      session-key: 'X-Speedtest-Session'
+      obfuscation: true
+    udp: true
   - name: 5UF 英国5  Hysteria2
     type: hysteria2
     server: uk4.xinhuanet.network
@@ -851,6 +998,13 @@ proxy-groups:
       - '5UF 美国6,直连美国'
       - '5UF 澳大利亚1,直连澳大利亚'
       - '5UF 新加坡2,BGP中转'
+      - '5UF 台湾2,BGP中转'
+      - '5UF 越南2,BGP中转'
+      - '5UF 韩国2,BGP中转'
+      - '5UF 泰国2,BGP中转'
+      - '5UF 澳大利亚2,BGP中转'
+      - '5UF 印度2,BGP中转'
+      - '5UF 德国2,BGP中转'
       - 5UF 英国5  Hysteria2
       - 5UF 越南3，VN1 同机 Hysteria2
       - 5UF 美国3，Hysteria2
@@ -928,6 +1082,13 @@ proxy-groups:
       - '5UF 美国6,直连美国'
       - '5UF 澳大利亚1,直连澳大利亚'
       - '5UF 新加坡2,BGP中转'
+      - '5UF 台湾2,BGP中转'
+      - '5UF 越南2,BGP中转'
+      - '5UF 韩国2,BGP中转'
+      - '5UF 泰国2,BGP中转'
+      - '5UF 澳大利亚2,BGP中转'
+      - '5UF 印度2,BGP中转'
+      - '5UF 德国2,BGP中转'
       - 5UF 英国5  Hysteria2
       - 5UF 越南3，VN1 同机 Hysteria2
       - 5UF 美国3，Hysteria2

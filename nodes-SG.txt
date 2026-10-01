@@ -1,1 +1,1 @@
-hysteria2://8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f@sg1.xinhuanet.network:443?sni=sg1.xinhuanet.network#5UF%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20sg3%EF%BC%8CHysteria2
+hysteria2://ada39f41-9c15-4e55-abf9-907f974f7be8@sg1.xinhuanet.network:443?sni=sg1.xinhuanet.network#5UF%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20sg3%EF%BC%8CHysteria2

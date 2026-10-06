@@ -15,27 +15,27 @@
 [ 15] 5UF 台湾 1,直连台北市,可以看 netflix	vless	tw1.xinhuanet.network:443
 [ 16] 5UF 美国1,直连美国东部	vless	usa1.xinhuanet.network:443
 [ 17] 5UF 香港1,直连香港核心机房	vless	hk1.xinhuanet.network:443
-[ 18] 5UF 香港2,专线，BGP移动电信联通都可以用,大陆专用	vless	hk2.xinhuanet.network:20453
-[ 19] 5UF 香港3,直连香港核心机房	vless	hk3.xinhuanet.network:443
-[ 20] 5UF 日本2,中国BGP优化,专线	vless	jp2.xinhuanet.network:20452
-[ 21] 5UF 日本1,直连东京	vless	jp1.xinhuanet.network:443
-[ 22] 5UF 新加坡1,SG1,新加坡直连	vless	sg1.xinhuanet.network:443
-[ 23] 5UF 英国1,直连英国伦敦	vless	uk1.xinhuanet.network:443
-[ 24] 5UF 英国2,专线,中国 BGP优化	vless	uk2.xinhuanet.network:20454
-[ 25] 5UF 美国2,中港专线，大陆BGP优化	vless	usa2.xinhuanet.network:20451
-[ 26] 5UF 越南1,直连胡志民市	vless	vn1.xinhuanet.network:443
-[ 27] 5UF 泰国1,直连曼谷	vless	th1.xinhuanet.network:443
-[ 28] 5UF 巴西 1,直连圣保罗	vless	br1.xinhuanet.network:443
-[ 29] 5UF 美国6,直连美国	vless	usa6.xinhuanet.network:443
-[ 30] 5UF 澳大利亚1,直连澳大利亚	vless	au1.xinhuanet.network:443
-[ 31] 5UF 新加坡2,BGP中转	vless	sg2.xinhuanet.network:20443
-[ 32] 5UF 台湾2,BGP中转	vless	tw2.xinhuanet.network:20444
-[ 33] 5UF 越南2,BGP中转	vless	vn2.xinhuanet.network:20445
-[ 34] 5UF 韩国2,BGP中转	vless	kr2.xinhuanet.network:20446
-[ 35] 5UF 泰国2,BGP中转	vless	th2.xinhuanet.network:20447
-[ 36] 5UF 澳大利亚2,BGP中转	vless	au2.xinhuanet.network:20448
-[ 37] 5UF 印度2,BGP中转	vless	in2.xinhuanet.network:20449
-[ 38] 5UF 德国2,BGP中转	vless	de2.xinhuanet.network:20450
+[ 18] 5UF 香港3,直连香港核心机房	vless	hk3.xinhuanet.network:443
+[ 19] 5UF 日本1,直连东京	vless	jp1.xinhuanet.network:443
+[ 20] 5UF 新加坡1,SG1,新加坡直连	vless	sg1.xinhuanet.network:443
+[ 21] 5UF 英国1,直连英国伦敦	vless	uk1.xinhuanet.network:443
+[ 22] 5UF 越南1,直连胡志民市	vless	vn1.xinhuanet.network:443
+[ 23] 5UF 泰国1,直连曼谷	vless	th1.xinhuanet.network:443
+[ 24] 5UF 巴西 1,直连圣保罗	vless	br1.xinhuanet.network:443
+[ 25] 5UF 美国6,直连美国	vless	usa6.xinhuanet.network:443
+[ 26] 5UF 澳大利亚1,直连澳大利亚	vless	au1.xinhuanet.network:443
+[ 27] 5UF 香港2,专线，BGP移动电信联通都可以用,大陆专用	hysteria2	hk2.xinhuanet.network:22453
+[ 28] 5UF 日本2,中国BGP优化,专线	hysteria2	jp2.xinhuanet.network:22452
+[ 29] 5UF 英国2,专线,中国 BGP优化	hysteria2	uk2.xinhuanet.network:22454
+[ 30] 5UF 美国2,中港专线，大陆BGP优化	hysteria2	usa2.xinhuanet.network:22451
+[ 31] 5UF 新加坡2,BGP中转	hysteria2	sg2.xinhuanet.network:22443
+[ 32] 5UF 台湾2,BGP中转	hysteria2	tw2.xinhuanet.network:22444
+[ 33] 5UF 越南2,BGP中转	hysteria2	vn2.xinhuanet.network:22445
+[ 34] 5UF 韩国2,BGP中转	hysteria2	kr2.xinhuanet.network:22446
+[ 35] 5UF 泰国2,BGP中转	hysteria2	th2.xinhuanet.network:22447
+[ 36] 5UF 澳大利亚2,BGP中转	hysteria2	au2.xinhuanet.network:22448
+[ 37] 5UF 印度2,BGP中转	hysteria2	in2.xinhuanet.network:22449
+[ 38] 5UF 德国2,BGP中转	hysteria2	de2.xinhuanet.network:22450
 [ 39] 5UF 英国5  Hysteria2	hysteria2	uk4.xinhuanet.network:38590
 [ 40] 5UF 越南3，VN1 同机 Hysteria2	hysteria2	vn1.xinhuanet.network:443
 [ 41] 5UF 美国3，Hysteria2	hysteria2	usa1.xinhuanet.network:443

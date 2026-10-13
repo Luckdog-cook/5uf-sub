@@ -7,12 +7,11 @@
     "uuid": "8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f"
   },
   "subscription": "https://api.5ufclub.com/vclash/8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f",
-  "count": 57,
+  "count": 56,
   "groups": {
     "DE": 1,
     "FR": 5,
     "GB": 4,
-    "HK": 1,
     "IN": 1,
     "KR": 1,
     "SG": 1,
@@ -225,29 +224,6 @@
       "sni": "uk4.xinhuanet.network",
       "alpn": {},
       "skip-cert-verify": true
-    },
-    {
-      "name": "5UF 香港 4, vless_xhttp CDN",
-      "type": "vless",
-      "server": "hk4.febbox.cn",
-      "port": 443,
-      "uuid": "8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f",
-      "tls": true,
-      "servername": "hk4.febbox.cn",
-      "client-fingerprint": "chrome",
-      "alpn": {},
-      "skip-cert-verify": true,
-      "network": "xhttp",
-      "udp": true,
-      "xhttp-opts": {
-        "path": "/speedtest/api/probe",
-        "host": "hk4.febbox.cn",
-        "mode": "stream-up",
-        "x-padding-bytes": 0,
-        "session-placement": "header",
-        "session-key": "X-Speedtest-Session",
-        "obfuscation": true
-      }
     },
     {
       "name": "5UF 印度 1,直连印度",

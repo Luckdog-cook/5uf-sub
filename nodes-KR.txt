@@ -1,1 +1,1 @@
-vless://179dad2b-73eb-458e-8d5c-6ffcee62aa6c@kr1.xinhuanet.network:443?security=tls&sni=kr1.xinhuanet.network&fp=chrome&type=xhttp&path=%2Fspeedtest%2Fapi%2Fprobe&host=kr1.xinhuanet.network&mode=stream-up&allowInsecure=1#5UF%20%E9%9F%A9%E5%9B%BD%20%2C%E7%9B%B4%E8%BF%9E%E9%A6%96%E5%B0%94
+vless://1d5ad1b3-a850-4a07-bdc7-6da33b4a601e@kr1.xinhuanet.network:443?security=tls&sni=kr1.xinhuanet.network&fp=chrome&type=xhttp&path=%2Fspeedtest%2Fapi%2Fprobe&host=kr1.xinhuanet.network&mode=stream-up&allowInsecure=1#5UF%20%E9%9F%A9%E5%9B%BD%20%2C%E7%9B%B4%E8%BF%9E%E9%A6%96%E5%B0%94

@@ -32,7 +32,7 @@
 
 依赖: 无（仅标准库）
 """
-import sys, os, json, ssl, argparse, urllib.request, urllib.parse, time
+import sys, os, re, json, ssl, argparse, urllib.request, urllib.parse, time
 import random, string, http.cookiejar
 
 # ---------- 配置 ----------
@@ -318,6 +318,46 @@ def fetch_clash_yaml(url):
     return _http_get(url, {"User-Agent": UA, "Accept": "*/*"}, timeout=60)
 
 
+# 官方 v2ray 订阅 → 链接列表（含 alpn / extra / encryption 等关键参数）
+_HOST_COUNTRY = {
+    "hk": "HK", "jp": "JP", "sg": "SG", "tw": "TW", "kr": "KR",
+    "de": "DE", "fr": "FR", "uk": "GB", "gb": "GB", "us": "US", "usa": "US",
+    "ca": "CA", "au": "AU", "in": "IN", "nl": "NL", "vn": "VN", "tr": "TR",
+}
+
+
+def link_country(link):
+    """从链接里取主机名前缀判断国家，如 de1.x → DE"""
+    m = re.search(r"@([^:/?#]+)", link)
+    if not m:
+        return "OTHER"
+    host = m.group(1).lower()
+    for prefix in ("usa", "uk", "gb", "us", "hk", "jp", "sg", "tw", "kr",
+                   "de", "fr", "ca", "au", "in", "nl", "vn", "tr"):
+        if host.startswith(prefix):
+            return _HOST_COUNTRY[prefix]
+    return "OTHER"
+
+
+def fetch_v2ray_links(uuid):
+    """下载官方 v2ray 订阅（base64），返回清洗后的链接列表"""
+    import base64
+    try:
+        raw = _http_get(f"{API_BASE}/v2ray/{uuid}",
+                        {"User-Agent": UA, "Accept": "*/*"}, timeout=60)
+    except Exception:
+        return []
+    if not raw:
+        return []
+    s = raw.strip()
+    if "://" not in s:
+        try:
+            s = base64.b64decode(s + "=" * (-len(s) % 4)).decode("utf-8", "replace")
+        except Exception:
+            return []
+    return [ln.strip() for ln in s.splitlines() if "://" in ln]
+
+
 def sub_is_real(yaml_text, proxies):
     """判断订阅是否为真节点（非占位）"""
     if not yaml_text or not proxies:
@@ -551,13 +591,19 @@ def dump_clash_config(proxies, port=7890, socks_port=7891):
     for p in proxies:
         first = True
         for k, v in p.items():
-            if isinstance(v, dict):
+            if isinstance(v, (dict, list)):
                 continue
             prefix = "  - " if first else "    "
             L.append(f"{prefix}{k}: {_yaml_q(v)}")
             first = False
-        # 嵌套项
         for k, v in p.items():
+            if isinstance(v, list):
+                if not v:
+                    continue
+                L.append(f"    {k}:")
+                for it in v:
+                    L.append(f"      - {_yaml_q(it)}")
+                continue
             if not isinstance(v, dict):
                 continue
             L.append(f"    {k}:")
@@ -568,8 +614,9 @@ def dump_clash_config(proxies, port=7890, socks_port=7891):
                         L.append(f"        - {_yaml_q(it)}")
                 else:
                     L.append(f"      {k2}: {_yaml_q(v2)}")
-        # 补齐空字段（Clash 兼容）
-        L.append("    udp: true")
+        # 只在节点没有 udp 字段时才补，避免重复键导致 YAML 解析失败
+        if "udp" not in p:
+            L.append("    udp: true")
     names = [p["name"] for p in proxies]
     L += ["", "proxy-groups:", "  - name: 全部", "    type: select",
           "    proxies:"] + [f"      - {_yaml_q(n)}" for n in names]
@@ -1006,12 +1053,19 @@ def dump_clash_grouped(groups, port=7890, socks_port=7891):
     for p in all_proxies:
         first = True
         for k, v in p.items():
-            if isinstance(v, dict):
+            if isinstance(v, (dict, list)):
                 continue
             prefix = "  - " if first else "    "
             L.append(f"{prefix}{k}: {_yaml_q(v)}")
             first = False
         for k, v in p.items():
+            if isinstance(v, list):
+                if not v:
+                    continue
+                L.append(f"    {k}:")
+                for it in v:
+                    L.append(f"      - {_yaml_q(it)}")
+                continue
             if not isinstance(v, dict):
                 continue
             L.append(f"    {k}:")
@@ -1022,7 +1076,8 @@ def dump_clash_grouped(groups, port=7890, socks_port=7891):
                         L.append(f"        - {_yaml_q(it)}")
                 else:
                     L.append(f"      {k2}: {_yaml_q(v2)}")
-        L.append("    udp: true")
+        if "udp" not in p:
+            L.append("    udp: true")
 
     # proxy-groups
     L += ["", "proxy-groups:"]
@@ -1102,6 +1157,8 @@ def main():
     log("[2/4] 获取节点 ...")
     # 先试官方订阅（付费号能直接拿到完全一致的配置）
     yaml_text, proxies, sub_url, uuid = None, None, None, None
+    official = False          # yaml_text 是否来自官方原文（原文已合法且自带分组）
+    official_links = []       # 官方 v2ray 链接（含 alpn / extra / encryption）
     try:
         sub_url, uuid = get_subscription_url(uid_v2, args.udid)
         log(f"      订阅地址: {sub_url}")
@@ -1112,12 +1169,19 @@ def main():
                 ("过期" in t or "充值" in t or ps[0].get("server") == "test"))
         if ps and not fake:
             yaml_text, proxies = t, ps
+            official = True
             log(f"      官方订阅: {len(ps)} 个节点")
         else:
             log(f"      官方订阅不可用（{'占位节点' if fake else '为空'}）"
                 f"→ 切换到自拼模式")
     except Exception as e:
         log(f"      官方订阅失败 ({e}) → 自拼模式")
+
+    # 官方 v2ray 订阅：参数最全，直接用于 nodes.txt / base64
+    if official and uuid:
+        official_links = fetch_v2ray_links(uuid)
+        if official_links:
+            log(f"      官方链接: {len(official_links)} 条（含 alpn/extra）")
 
     if proxies is None:
         log("[2b/4] 自拼节点（免费号路线）...")
@@ -1153,7 +1217,9 @@ def main():
 
     # ----- Clash -----
     if fmt in ("all", "clash"):
-        if args.group:
+        # 官方原文本身就是合法配置且自带分组，直接用；
+        # 只有自拼模式才需要重新序列化
+        if args.group and not official:
             yaml_text = dump_clash_grouped(groups)
         with open(out + "_clash.yaml", "w", encoding="utf-8") as f:
             f.write(yaml_text)
@@ -1176,7 +1242,8 @@ def main():
 
     # ----- V2Ray 链接（总 + 分国家）-----
     if fmt in ("all", "v2ray"):
-        links = to_v2ray_links(proxies)
+        # 官方链接参数最全（alpn / extra / encryption），优先用官方
+        links = official_links if official_links else to_v2ray_links(proxies)
         with open(out + "_v2ray.txt", "w", encoding="utf-8") as f:
             f.write("\n".join(links))
         with open(os.path.join(out_dir, "nodes.txt"), "w", encoding="utf-8") as f:
@@ -1190,14 +1257,26 @@ def main():
 
         # 分国家输出
         if args.group:
-            for country, nodes in groups.items():
-                if country == "OTHER" and len(nodes) < 2:
-                    continue
-                clinks = to_v2ray_links(nodes)
-                path = os.path.join(out_dir, f"nodes-{country}.txt")
-                with open(path, "w", encoding="utf-8") as f:
-                    f.write("\n".join(clinks) + "\n")
-                log(f"  -> nodes-{country}.txt  ({len(clinks)} 条)")
+            if official_links:
+                buckets = {}
+                for ln in official_links:
+                    buckets.setdefault(link_country(ln), []).append(ln)
+                for country, clinks in buckets.items():
+                    if country == "OTHER" and len(clinks) < 2:
+                        continue
+                    path = os.path.join(out_dir, f"nodes-{country}.txt")
+                    with open(path, "w", encoding="utf-8") as f:
+                        f.write("\n".join(clinks) + "\n")
+                    log(f"  -> nodes-{country}.txt  ({len(clinks)} 条)")
+            else:
+                for country, nodes in groups.items():
+                    if country == "OTHER" and len(nodes) < 2:
+                        continue
+                    clinks = to_v2ray_links(nodes)
+                    path = os.path.join(out_dir, f"nodes-{country}.txt")
+                    with open(path, "w", encoding="utf-8") as f:
+                        f.write("\n".join(clinks) + "\n")
+                    log(f"  -> nodes-{country}.txt  ({len(clinks)} 条)")
 
     # ----- List -----
     if fmt in ("all", "list"):

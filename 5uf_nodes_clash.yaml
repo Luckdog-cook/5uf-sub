@@ -13,8 +13,8 @@ proxies:
     server: fr1.xinhuanet.network
     sni: fr1.xinhuanet.network
     port: 38573
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     network: tcp
     udp: true
     tls: true
@@ -34,8 +34,8 @@ proxies:
     server: uk4.xinhuanet.network
     sni: uk4.xinhuanet.network
     port: 38573
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     network: tcp
     udp: true
     tls: true
@@ -54,7 +54,7 @@ proxies:
     type: vless
     server: usa1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: usa1.xinhuanet.network
     client-fingerprint: chrome
@@ -75,7 +75,7 @@ proxies:
     type: vless
     server: de1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: de1.xinhuanet.network
     client-fingerprint: chrome
@@ -96,7 +96,7 @@ proxies:
     type: vless
     server: hk1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: hk1.xinhuanet.network
     client-fingerprint: chrome
@@ -117,7 +117,7 @@ proxies:
     type: vless
     server: hk3.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: hk3.xinhuanet.network
     client-fingerprint: chrome
@@ -138,7 +138,7 @@ proxies:
     type: vless
     server: jp1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: jp1.xinhuanet.network
     client-fingerprint: chrome
@@ -159,7 +159,7 @@ proxies:
     type: vless
     server: sg1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: sg1.xinhuanet.network
     client-fingerprint: chrome
@@ -180,7 +180,7 @@ proxies:
     type: vless
     server: uk1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: uk1.xinhuanet.network
     client-fingerprint: chrome
@@ -201,7 +201,7 @@ proxies:
     type: vless
     server: kr1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: kr1.xinhuanet.network
     client-fingerprint: chrome
@@ -222,7 +222,7 @@ proxies:
     type: vless
     server: tw1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: tw1.xinhuanet.network
     client-fingerprint: chrome
@@ -243,7 +243,7 @@ proxies:
     type: vless
     server: vn1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: vn1.xinhuanet.network
     client-fingerprint: chrome
@@ -264,7 +264,7 @@ proxies:
     type: vless
     server: th1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: th1.xinhuanet.network
     client-fingerprint: chrome
@@ -285,7 +285,7 @@ proxies:
     type: vless
     server: br1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: br1.xinhuanet.network
     client-fingerprint: chrome
@@ -306,7 +306,7 @@ proxies:
     type: vless
     server: usa6.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: usa6.xinhuanet.network
     client-fingerprint: chrome
@@ -327,7 +327,7 @@ proxies:
     type: vless
     server: in1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: in1.xinhuanet.network
     client-fingerprint: chrome
@@ -348,7 +348,7 @@ proxies:
     type: vless
     server: au1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: au1.xinhuanet.network
     client-fingerprint: chrome
@@ -369,7 +369,7 @@ proxies:
     type: vless
     server: fr1.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: fr1.xinhuanet.network
     client-fingerprint: chrome
@@ -390,7 +390,7 @@ proxies:
     type: vless
     server: fr1.xinhuanet.network
     port: 38574
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: fr1.xinhuanet.network
     client-fingerprint: chrome
@@ -411,7 +411,7 @@ proxies:
     type: vless
     server: uk4.xinhuanet.network
     port: 443
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: uk4.xinhuanet.network
     client-fingerprint: chrome
@@ -432,7 +432,7 @@ proxies:
     type: vless
     server: uk4.xinhuanet.network
     port: 38574
-    uuid: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    uuid: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     tls: true
     servername: uk4.xinhuanet.network
     client-fingerprint: chrome
@@ -453,7 +453,7 @@ proxies:
     type: anytls
     server: fr1.xinhuanet.network
     port: 38553
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     client-fingerprint: chrome
     udp: true
     idle-session-check-interval: 30
@@ -469,7 +469,7 @@ proxies:
     type: anytls
     server: uk4.xinhuanet.network
     port: 38553
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     client-fingerprint: chrome
     udp: true
     idle-session-check-interval: 30
@@ -485,7 +485,7 @@ proxies:
     type: hysteria2
     server: hk2.xinhuanet.network
     port: 22453
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: hk2.xinhuanet.network
     alpn:
       - h3
@@ -495,7 +495,7 @@ proxies:
     type: hysteria2
     server: jp2.xinhuanet.network
     port: 22452
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp2.xinhuanet.network
     alpn:
       - h3
@@ -505,7 +505,7 @@ proxies:
     type: hysteria2
     server: uk2.xinhuanet.network
     port: 22454
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: uk2.xinhuanet.network
     alpn:
       - h3
@@ -515,7 +515,7 @@ proxies:
     type: hysteria2
     server: usa2.xinhuanet.network
     port: 22451
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: usa2.xinhuanet.network
     alpn:
       - h3
@@ -525,7 +525,7 @@ proxies:
     type: hysteria2
     server: sg2.xinhuanet.network
     port: 22443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: sg2.xinhuanet.network
     alpn:
       - h3
@@ -535,7 +535,7 @@ proxies:
     type: hysteria2
     server: tw2.xinhuanet.network
     port: 22444
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: tw2.xinhuanet.network
     alpn:
       - h3
@@ -545,7 +545,7 @@ proxies:
     type: hysteria2
     server: vn2.xinhuanet.network
     port: 22445
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: vn2.xinhuanet.network
     alpn:
       - h3
@@ -555,7 +555,7 @@ proxies:
     type: hysteria2
     server: kr2.xinhuanet.network
     port: 22446
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: kr2.xinhuanet.network
     alpn:
       - h3
@@ -565,7 +565,7 @@ proxies:
     type: hysteria2
     server: th2.xinhuanet.network
     port: 22447
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: th2.xinhuanet.network
     alpn:
       - h3
@@ -575,7 +575,7 @@ proxies:
     type: hysteria2
     server: au2.xinhuanet.network
     port: 22448
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: au2.xinhuanet.network
     alpn:
       - h3
@@ -585,7 +585,7 @@ proxies:
     type: hysteria2
     server: in2.xinhuanet.network
     port: 22449
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: in2.xinhuanet.network
     alpn:
       - h3
@@ -595,7 +595,7 @@ proxies:
     type: hysteria2
     server: de2.xinhuanet.network
     port: 22450
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: de2.xinhuanet.network
     alpn:
       - h3
@@ -605,7 +605,7 @@ proxies:
     type: hysteria2
     server: fr1.xinhuanet.network
     port: 38590
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: fr1.xinhuanet.network
     alpn:
       - h3
@@ -615,7 +615,7 @@ proxies:
     type: hysteria2
     server: uk4.xinhuanet.network
     port: 38590
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: uk4.xinhuanet.network
     alpn:
       - h3
@@ -625,7 +625,7 @@ proxies:
     type: hysteria2
     server: vn1.xinhuanet.network
     port: 443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: vn1.xinhuanet.network
     alpn:
       - h3
@@ -635,7 +635,7 @@ proxies:
     type: hysteria2
     server: usa1.xinhuanet.network
     port: 443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: usa1.xinhuanet.network
     alpn:
       - h3
@@ -645,7 +645,7 @@ proxies:
     type: hysteria2
     server: jp1.xinhuanet.network
     port: 443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp1.xinhuanet.network
     alpn:
       - h3
@@ -655,7 +655,7 @@ proxies:
     type: hysteria2
     server: au1.xinhuanet.network
     port: 443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: au1.xinhuanet.network
     alpn:
       - h3
@@ -665,7 +665,7 @@ proxies:
     type: hysteria2
     server: hk6.xinhuanet.network
     port: 443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: hk6.xinhuanet.network
     alpn:
       - h3
@@ -675,7 +675,7 @@ proxies:
     type: hysteria2
     server: sg1.xinhuanet.network
     port: 443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: sg1.xinhuanet.network
     alpn:
       - h3
@@ -685,7 +685,7 @@ proxies:
     type: hysteria2
     server: uk1.xinhuanet.network
     port: 443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: uk1.xinhuanet.network
     alpn:
       - h3
@@ -695,7 +695,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 443
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -705,7 +705,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22001
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -715,7 +715,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22002
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -725,7 +725,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22003
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -735,7 +735,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22004
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -745,7 +745,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22005
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -755,7 +755,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22006
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -765,7 +765,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22007
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -775,7 +775,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22008
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -785,7 +785,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22009
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -795,7 +795,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22010
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -805,7 +805,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22011
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3
@@ -815,7 +815,7 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22012
-    password: 1d5ad1b3-a850-4a07-bdc7-6da33b4a601e
+    password: 8a3f143d-86dc-4a1a-ab90-3a52a7c5a06f
     sni: jp4.xinhuanet.network
     alpn:
       - h3

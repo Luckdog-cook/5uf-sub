@@ -43,15 +43,8 @@
 [ 43] 5UF 香港6，新直连，Hysteria2	hysteria2	hk6.xinhuanet.network:443
 [ 44] 5UF 英国3，Hysteria2	hysteria2	uk1.xinhuanet.network:443
 [ 45] 5UF 日本4，直连东京，Hysteria2	hysteria2	jp4.xinhuanet.network:443
-[ 46] 5UF 新加坡4，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22001
-[ 47] 5UF 台湾3，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22002
-[ 48] 5UF 越南4，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22003
-[ 49] 5UF 韩国3，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22004
-[ 50] 5UF 泰国3，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22005
-[ 51] 5UF 澳大利亚4，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22006
-[ 52] 5UF 印度3，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22007
-[ 53] 5UF 德国3，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22008
-[ 54] 5UF 美国4，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22009
-[ 55] 5UF 日本5，直连东京，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22010
-[ 56] 5UF 香港10，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22011
-[ 57] 5UF 英国9，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22012
+[ 46] 5UF 澳大利亚4，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22006
+[ 47] 5UF 印度3，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22007
+[ 48] 5UF 德国3，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22008
+[ 49] 5UF 美国4，日本中转，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22009
+[ 50] 5UF 日本5，直连东京，Hysteria2 + HTTP2	hysteria2	jp4.xinhuanet.network:22010

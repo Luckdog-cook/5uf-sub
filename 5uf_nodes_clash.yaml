@@ -691,16 +691,6 @@ proxies:
       - h3
     skip-cert-verify: false
     udp: true
-  - name: '5UF 日本4，直连东京，Hysteria2'
-    type: hysteria2
-    server: jp4.xinhuanet.network
-    port: 443
-    password: 025aad85-f884-4dc2-94b7-fb023e60d087
-    sni: jp4.xinhuanet.network
-    alpn:
-      - h3
-    skip-cert-verify: false
-    udp: true
   - name: '5UF 澳大利亚4，日本中转，Hysteria2 + HTTP2'
     type: hysteria2
     server: jp4.xinhuanet.network
@@ -735,16 +725,6 @@ proxies:
     type: hysteria2
     server: jp4.xinhuanet.network
     port: 22009
-    password: 025aad85-f884-4dc2-94b7-fb023e60d087
-    sni: jp4.xinhuanet.network
-    alpn:
-      - h3
-    skip-cert-verify: false
-    udp: true
-  - name: '5UF 日本5，直连东京，Hysteria2 + HTTP2'
-    type: hysteria2
-    server: jp4.xinhuanet.network
-    port: 22010
     password: 025aad85-f884-4dc2-94b7-fb023e60d087
     sni: jp4.xinhuanet.network
     alpn:
@@ -800,12 +780,10 @@ proxy-groups:
       - '5UF 香港6，新直连，Hysteria2'
       - '5UF 新加坡 sg3，Hysteria2'
       - '5UF 英国3，Hysteria2'
-      - '5UF 日本4，直连东京，Hysteria2'
       - '5UF 澳大利亚4，日本中转，Hysteria2 + HTTP2'
       - '5UF 印度3，日本中转，Hysteria2 + HTTP2'
       - '5UF 德国3，日本中转，Hysteria2 + HTTP2'
       - '5UF 美国4，日本中转，Hysteria2 + HTTP2'
-      - '5UF 日本5，直连东京，Hysteria2 + HTTP2'
   - name: '直连'
     type: select
     proxies:

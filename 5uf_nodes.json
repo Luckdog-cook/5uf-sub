@@ -7,7 +7,7 @@
     "uuid": "025aad85-f884-4dc2-94b7-fb023e60d087"
   },
   "subscription": "https://api.5ufclub.com/vclash/025aad85-f884-4dc2-94b7-fb023e60d087",
-  "count": 50,
+  "count": 48,
   "groups": {
     "DE": 1,
     "FR": 5,
@@ -16,7 +16,7 @@
     "KR": 1,
     "SG": 1,
     "TW": 1,
-    "OTHER": 36
+    "OTHER": 34
   },
   "proxies": [
     {
@@ -768,17 +768,6 @@
       "udp": true
     },
     {
-      "name": "5UF 日本4，直连东京，Hysteria2",
-      "type": "hysteria2",
-      "server": "jp4.xinhuanet.network",
-      "port": 443,
-      "password": "025aad85-f884-4dc2-94b7-fb023e60d087",
-      "sni": "jp4.xinhuanet.network",
-      "alpn": {},
-      "skip-cert-verify": false,
-      "udp": true
-    },
-    {
       "name": "5UF 澳大利亚4，日本中转，Hysteria2 + HTTP2",
       "type": "hysteria2",
       "server": "jp4.xinhuanet.network",
@@ -816,17 +805,6 @@
       "type": "hysteria2",
       "server": "jp4.xinhuanet.network",
       "port": 22009,
-      "password": "025aad85-f884-4dc2-94b7-fb023e60d087",
-      "sni": "jp4.xinhuanet.network",
-      "alpn": {},
-      "skip-cert-verify": false,
-      "udp": true
-    },
-    {
-      "name": "5UF 日本5，直连东京，Hysteria2 + HTTP2",
-      "type": "hysteria2",
-      "server": "jp4.xinhuanet.network",
-      "port": 22010,
       "password": "025aad85-f884-4dc2-94b7-fb023e60d087",
       "sni": "jp4.xinhuanet.network",
       "alpn": {},

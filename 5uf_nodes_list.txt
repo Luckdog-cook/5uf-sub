@@ -12,8 +12,8 @@
 [ 12] 5UF 韩国 ,直连首尔	vless	kr1.xinhuanet.network:443
 [ 13] 5UF 新加坡 sg3，Hysteria2	hysteria2	sg1.xinhuanet.network:443
 [ 14] 5UF 台湾 1,直连台北市,可以看 netflix	vless	tw1.xinhuanet.network:443
-[ 15] 5UF 美国 7,独立 IP	hysteria2	usa7.xinhuanet.network:443
-[ 16] 5UF 美国 8,独立 IP	hysteria2	usa8.xinhuanet.network:443
+[ 15] 5UF 美国 7,可购买独立IP服务器	hysteria2	usa7.xinhuanet.network:443
+[ 16] 5UF 美国 8,如果购买了独立IP,这里会使用你自己的 IP 出口,否则会使用共享出口	hysteria2	usa8.xinhuanet.network:443
 [ 17] 5UF 美国1,直连美国东部	vless	usa1.xinhuanet.network:443
 [ 18] 5UF 香港1,直连香港核心机房	vless	hk1.xinhuanet.network:443
 [ 19] 5UF 香港3,直连香港核心机房	vless	hk3.xinhuanet.network:443
